@@ -36,5 +36,13 @@ install(
   DIRECTORY config description launch worlds
   DESTINATION share/${PROJECT_NAME}
 )
+install(
+  PROGRAMS
+    scripts/wifi_bridge.py
+    scripts/ultrasonic_to_rviz.py
+    scripts/ultrasonic_to_laser_scan.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 
 ament_package()
